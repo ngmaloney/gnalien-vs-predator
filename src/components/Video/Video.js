@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import trailer from 'videos/MacgruberTrailer.mp4';
+import trailer from 'videos/avp.mp4';
 
 const baseClass = 'video';
 
