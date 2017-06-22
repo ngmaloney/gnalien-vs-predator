@@ -1,6 +1,5 @@
 node_modules
 
-dist/bundle.css
-dist/bundle.js
+dist/*
 
 npm-debug.log

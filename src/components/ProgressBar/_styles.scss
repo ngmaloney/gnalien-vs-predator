@@ -1,0 +1,14 @@
+.progress-bar {
+  &__wrapper {
+    background-color: $grey;
+    height: 20px;
+    overflow: hidden;
+  }
+
+  &__meter {
+    background-color: $red;
+    height: 100%;
+    overflow: hidden;
+    transition: width 300ms ease-in;
+  }
+}

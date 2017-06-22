@@ -12,6 +12,7 @@ module.exports = {
     'describe': false
   },
   rules: {
+    'react/jsx-filename-extension': 0,
     'consistent-return': 1,
     'arrow-body-style': 0,
     'max-len': 0,

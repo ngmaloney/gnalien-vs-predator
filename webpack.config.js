@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /(node_modules)|(\.test\.js$)/,
         use: [
           'babel-loader',
@@ -34,6 +34,14 @@ module.exports = {
             { loader: 'import-glob-loader' }
           ]
         })
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader?attrs[]=video:src'
+      },
+      {
+        test: /\.mp4$/,
+        loader: 'url-loader?limit=10000&mimetype=video/mp4'
       }
     ],
   },

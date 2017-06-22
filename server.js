@@ -9,8 +9,8 @@ const compiler = webpack(webpackConfig);
 app.use(express.static(__dirname + '/dist'));
 
 app.use(webpackDevMiddleware(compiler, {
-  hot: true,
-  filename: 'bundle.js',
+  hot: false,
+  filename: 'dist/bundle.js',
   publicPath: '/',
   stats: {
     colors: true,
